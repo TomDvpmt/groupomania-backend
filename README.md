@@ -1,6 +1,6 @@
 <center>
 
-![Logo de l'application Groupomania](/frontend//src//assets//img/brand/icon-left-font-cropped.png)
+![Logo de l'application Groupomania](/readme/logo/groupomania-logo.png)
 
 </center>
 
@@ -12,7 +12,9 @@ Projet réalisé en 2023 dans le cadre de la formation "Développeur web" d'Open
 
 **Groupomania** est un réseau social d'entreprise avec forum et chat en temps réel.
 
-Le projet consistait à créer le back-end et le front-end de l'application, en utilisant une **base de données**, un **framework JavaScript** et un **state manager**.
+Ce dépôt est le **back-end** de l'application.
+
+Dépôt du front-end : [lien à venir]()
 
 # Technologies utilisées
 
@@ -23,12 +25,6 @@ Le projet consistait à créer le back-end et le front-end de l'application, en 
 -   Bcrypt
 -   JWT
 -   Multer
--   React
--   React Router 6
--   Redux
--   Redux Toolkit
--   PropTypes
--   Material UI
 -   Socket.io
 
 # Fonctionnalités
@@ -42,23 +38,21 @@ Le projet consistait à créer le back-end et le front-end de l'application, en 
 
 <center>
 
-![Page forum de Groupomania](/frontend/src/assets/img/captures/groupomania-forum.webp)
+![Page forum de Groupomania](/readme/captures/groupomania-forum.webp)
 
 </center>
 
 <center>
 
-![Page chat de Groupomania](/frontend/src/assets/img/captures/groupomania-chat.webp)
+![Page chat de Groupomania](/readme/captures/groupomania-chat.webp)
 
 </center>
 
 # Installation
 
-## Back-end
-
 -   Installer MySQL en suivant [ces instructions](https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql/7152681-installez-le-sgbd-mysql).
 
--   Dans le répertoire `backend`, créer un fichier `.env` contenant les instructions suivantes, avec les noms d'utilisateur et mot de passe à remplacer par les données relatives à votre installation de MySQL (supprimer les balises `<>`), et la phrase de création du token à remplacer par une phrase de votre choix :
+-   Dans le répertoire racine de l'application, créer un fichier `.env` contenant les instructions suivantes, avec les noms d'utilisateur et mot de passe à remplacer par les données relatives à votre installation de MySQL (supprimer les balises `<>`), et la phrase de création du token à remplacer par une phrase de votre choix :
 
 ```
 PORT=3000
@@ -70,23 +64,13 @@ TOKEN_CREATION_PHRASE=<choisir une phrase complexe>
 CHAT_POSTS_LIMIT=100
 ```
 
--   Toujours dans le répertoire `backend`, exécuter la commande :
+-   Toujours dans le répertoire racine, exécuter la commande :
 
 `npm install`
 
-## Front-end
+# Lancement du serveur
 
--   Dans le répertoire `frontend`, exécuter la commande :
-
-`npm install`
-
-# Lancement de l'application
-
--   Dans le répertoire `backend`, exécuter la commande :
-
-`node server`
-
--   Dans le répertoire `frontend`, exécuter la commande :
+-   Dans le répertoire racine, exécuter la commande :
 
 `npm start`
 
@@ -94,5 +78,4 @@ CHAT_POSTS_LIMIT=100
 
 Pour changer le nombre maximum de messages affichés dans le chat :
 
--   dans le fichier `backend/.env`, changer la valeur de `CHAT_POSTS_LIMIT`,
--   dans le fichier `frontend/src/services/features/chat.js`, changer la valeur de `initialState.limit`
+-   dans le fichier `.env`, changer la valeur de `CHAT_POSTS_LIMIT`,
