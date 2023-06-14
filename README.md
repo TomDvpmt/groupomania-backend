@@ -12,9 +12,13 @@ Projet réalisé en 2023 dans le cadre de la formation "Développeur web" d'Open
 
 **Groupomania** est un réseau social d'entreprise avec forum et chat en temps réel.
 
-Ce dépôt est le **back-end** de l'application.
+Le projet consistait à créer le back-end et le front-end de l'application, en utilisant une **base de données**, un **framework JavaScript** et un **state manager**.
 
-Dépôt du front-end : [lien à venir]()
+# Dépôts
+
+Ce dépôt contient uniquement le **back-end** de l'application.
+
+Le front-end : [https://github.com/TomDvpmt/groupomania-frontend](https://github.com/TomDvpmt/groupomania-frontend)
 
 # Technologies utilisées
 
